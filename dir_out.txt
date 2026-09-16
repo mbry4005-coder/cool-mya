@@ -1,0 +1,22 @@
+total 2
+drwxr-xr-x    1 197609   197609           0 Aug 26 17:56 .
+drwx------    1 197609   197609           0 Aug 26 17:53 ..
+-rw-r--r--    1 197609   197609           0 Aug 26 18:03 dir_out.txt
+drwxr-xr-x    1 197609   197609           0 Aug 26 17:34 scripts
+Above are the directory listings for this folder
+
+Above are the directory listings for this folder
+
+Right now it is:
+Wed Aug 26 18:03:13 EDT 2026
+total 3
+drwxr-xr-x    1 197609   197609           0 Aug 26 17:56 .
+drwx------    1 197609   197609           0 Aug 26 17:53 ..
+-rw-r--r--    1 197609   197609         407 Aug 26 18:03 dir_out.txt
+drwxr-xr-x    1 197609   197609           0 Aug 26 17:34 scripts
+Above are the directory listings for this folder
+
+Above are the directory listings for this folder
+
+Right now it is:
+Wed Aug 26 18:03:27 EDT 2026
