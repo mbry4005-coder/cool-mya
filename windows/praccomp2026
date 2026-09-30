@@ -1,0 +1,1455 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "19c92752-10c2-435d-a576-fbecc598f800",
+   "metadata": {},
+   "source": [
+    "# Practical Computing 2026\n",
+    "\n",
+    "## Python in Jupyter\n",
+    "\n",
+    "### Lists and tuples finishing"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "2197fc9d-8303-4944-991c-f9a1d8509ba9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mylist = [1,2,3,4,5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "afe91fac-3293-4759-baff-18d3499716dd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5]"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "8c16148d-2ebe-407d-956a-c4856dcc1a4d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mylist.append(6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "564bd8a0-6c1a-4aff-9034-f04ef4bae085",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5, 6]"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "d87f72f8-0321-452b-9d45-c7e40dca5c33",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist[2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "1cb757c1-bf07-40c2-ae08-0ea2a2cda53c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mytuple = [1,2,3,4,5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "df99cd8d-4235-44c6-94d9-9a0eff2bc05a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5]"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mytuple"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "adbcf998-cd3b-491f-aa96-eda5f2dba135",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mytuple.append(6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "29daf421-9e81-4d4a-9c00-6ea699100d3c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mytyple[3] = 4"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "06e614b1-9223-40bc-b7de-26aebb61a556",
+   "metadata": {},
+   "source": [
+    "### Libraries (\"modules\" or in R parlance packages)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "826b3c99-1dc6-4d1c-a544-6dfac3616b64",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "9291eb5c-0ad8-4820-b645-2a389e79d920",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['.ipynb_checkpoints',\n",
+       " 'data',\n",
+       " 'environment.yml',\n",
+       " 'praccomp2026',\n",
+       " 'praccomp2026.ipymb']"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "os.listdir()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "e7221318-ea27-4a27-b696-c004e7dae639",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "dd7a9cc7-215c-4604-8d9d-4606a1c628ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>record_id</th>\n",
+       "      <th>month</th>\n",
+       "      <th>day</th>\n",
+       "      <th>year</th>\n",
+       "      <th>plot_id</th>\n",
+       "      <th>species_id</th>\n",
+       "      <th>sex</th>\n",
+       "      <th>hindfoot_length</th>\n",
+       "      <th>weight</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>2</td>\n",
+       "      <td>NL</td>\n",
+       "      <td>M</td>\n",
+       "      <td>32.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>3</td>\n",
+       "      <td>NL</td>\n",
+       "      <td>M</td>\n",
+       "      <td>33.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>3</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>2</td>\n",
+       "      <td>DM</td>\n",
+       "      <td>F</td>\n",
+       "      <td>37.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>4</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>7</td>\n",
+       "      <td>DM</td>\n",
+       "      <td>M</td>\n",
+       "      <td>36.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>5</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>3</td>\n",
+       "      <td>DM</td>\n",
+       "      <td>M</td>\n",
+       "      <td>35.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>...</th>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35544</th>\n",
+       "      <td>35545</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>15</td>\n",
+       "      <td>AH</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35545</th>\n",
+       "      <td>35546</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>15</td>\n",
+       "      <td>AH</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35546</th>\n",
+       "      <td>35547</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>10</td>\n",
+       "      <td>RM</td>\n",
+       "      <td>F</td>\n",
+       "      <td>15.0</td>\n",
+       "      <td>14.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35547</th>\n",
+       "      <td>35548</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>7</td>\n",
+       "      <td>DO</td>\n",
+       "      <td>M</td>\n",
+       "      <td>36.0</td>\n",
+       "      <td>51.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35548</th>\n",
+       "      <td>35549</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>5</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "<p>35549 rows × 9 columns</p>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "       record_id  month  day  year  plot_id species_id  sex  hindfoot_length  \\\n",
+       "0              1      7   16  1977        2         NL    M             32.0   \n",
+       "1              2      7   16  1977        3         NL    M             33.0   \n",
+       "2              3      7   16  1977        2         DM    F             37.0   \n",
+       "3              4      7   16  1977        7         DM    M             36.0   \n",
+       "4              5      7   16  1977        3         DM    M             35.0   \n",
+       "...          ...    ...  ...   ...      ...        ...  ...              ...   \n",
+       "35544      35545     12   31  2002       15         AH  NaN              NaN   \n",
+       "35545      35546     12   31  2002       15         AH  NaN              NaN   \n",
+       "35546      35547     12   31  2002       10         RM    F             15.0   \n",
+       "35547      35548     12   31  2002        7         DO    M             36.0   \n",
+       "35548      35549     12   31  2002        5        NaN  NaN              NaN   \n",
+       "\n",
+       "       weight  \n",
+       "0         NaN  \n",
+       "1         NaN  \n",
+       "2         NaN  \n",
+       "3         NaN  \n",
+       "4         NaN  \n",
+       "...       ...  \n",
+       "35544     NaN  \n",
+       "35545     NaN  \n",
+       "35546    14.0  \n",
+       "35547    51.0  \n",
+       "35548     NaN  \n",
+       "\n",
+       "[35549 rows x 9 columns]"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "pd.read_csv(\"data/portal-teachingdb-master/surveys.csv\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "5c948ed6-9e73-48d6-8f58-8fd2cc4c34e0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "surveys_df = pd.read_csv(\"data/portal-teachingdb-master/surveys.csv\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "e9b792c0-83ab-4496-b5b9-b785a762c5bd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>record_id</th>\n",
+       "      <th>month</th>\n",
+       "      <th>day</th>\n",
+       "      <th>year</th>\n",
+       "      <th>plot_id</th>\n",
+       "      <th>species_id</th>\n",
+       "      <th>sex</th>\n",
+       "      <th>hindfoot_length</th>\n",
+       "      <th>weight</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>2</td>\n",
+       "      <td>NL</td>\n",
+       "      <td>M</td>\n",
+       "      <td>32.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>3</td>\n",
+       "      <td>NL</td>\n",
+       "      <td>M</td>\n",
+       "      <td>33.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>3</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>2</td>\n",
+       "      <td>DM</td>\n",
+       "      <td>F</td>\n",
+       "      <td>37.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>4</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>7</td>\n",
+       "      <td>DM</td>\n",
+       "      <td>M</td>\n",
+       "      <td>36.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>5</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>3</td>\n",
+       "      <td>DM</td>\n",
+       "      <td>M</td>\n",
+       "      <td>35.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>...</th>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35544</th>\n",
+       "      <td>35545</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>15</td>\n",
+       "      <td>AH</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35545</th>\n",
+       "      <td>35546</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>15</td>\n",
+       "      <td>AH</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35546</th>\n",
+       "      <td>35547</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>10</td>\n",
+       "      <td>RM</td>\n",
+       "      <td>F</td>\n",
+       "      <td>15.0</td>\n",
+       "      <td>14.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35547</th>\n",
+       "      <td>35548</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>7</td>\n",
+       "      <td>DO</td>\n",
+       "      <td>M</td>\n",
+       "      <td>36.0</td>\n",
+       "      <td>51.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35548</th>\n",
+       "      <td>35549</td>\n",
+       "      <td>12</td>\n",
+       "      <td>31</td>\n",
+       "      <td>2002</td>\n",
+       "      <td>5</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "<p>35549 rows × 9 columns</p>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "       record_id  month  day  year  plot_id species_id  sex  hindfoot_length  \\\n",
+       "0              1      7   16  1977        2         NL    M             32.0   \n",
+       "1              2      7   16  1977        3         NL    M             33.0   \n",
+       "2              3      7   16  1977        2         DM    F             37.0   \n",
+       "3              4      7   16  1977        7         DM    M             36.0   \n",
+       "4              5      7   16  1977        3         DM    M             35.0   \n",
+       "...          ...    ...  ...   ...      ...        ...  ...              ...   \n",
+       "35544      35545     12   31  2002       15         AH  NaN              NaN   \n",
+       "35545      35546     12   31  2002       15         AH  NaN              NaN   \n",
+       "35546      35547     12   31  2002       10         RM    F             15.0   \n",
+       "35547      35548     12   31  2002        7         DO    M             36.0   \n",
+       "35548      35549     12   31  2002        5        NaN  NaN              NaN   \n",
+       "\n",
+       "       weight  \n",
+       "0         NaN  \n",
+       "1         NaN  \n",
+       "2         NaN  \n",
+       "3         NaN  \n",
+       "4         NaN  \n",
+       "...       ...  \n",
+       "35544     NaN  \n",
+       "35545     NaN  \n",
+       "35546    14.0  \n",
+       "35547    51.0  \n",
+       "35548     NaN  \n",
+       "\n",
+       "[35549 rows x 9 columns]"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "surveys_df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "c67a656e-791d-472d-9473-9c12866d6808",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>record_id</th>\n",
+       "      <th>month</th>\n",
+       "      <th>day</th>\n",
+       "      <th>year</th>\n",
+       "      <th>plot_id</th>\n",
+       "      <th>species_id</th>\n",
+       "      <th>sex</th>\n",
+       "      <th>hindfoot_length</th>\n",
+       "      <th>weight</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>2</td>\n",
+       "      <td>NL</td>\n",
+       "      <td>M</td>\n",
+       "      <td>32.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>3</td>\n",
+       "      <td>NL</td>\n",
+       "      <td>M</td>\n",
+       "      <td>33.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>3</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>2</td>\n",
+       "      <td>DM</td>\n",
+       "      <td>F</td>\n",
+       "      <td>37.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>4</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>7</td>\n",
+       "      <td>DM</td>\n",
+       "      <td>M</td>\n",
+       "      <td>36.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>5</td>\n",
+       "      <td>7</td>\n",
+       "      <td>16</td>\n",
+       "      <td>1977</td>\n",
+       "      <td>3</td>\n",
+       "      <td>DM</td>\n",
+       "      <td>M</td>\n",
+       "      <td>35.0</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   record_id  month  day  year  plot_id species_id sex  hindfoot_length  \\\n",
+       "0          1      7   16  1977        2         NL   M             32.0   \n",
+       "1          2      7   16  1977        3         NL   M             33.0   \n",
+       "2          3      7   16  1977        2         DM   F             37.0   \n",
+       "3          4      7   16  1977        7         DM   M             36.0   \n",
+       "4          5      7   16  1977        3         DM   M             35.0   \n",
+       "\n",
+       "   weight  \n",
+       "0     NaN  \n",
+       "1     NaN  \n",
+       "2     NaN  \n",
+       "3     NaN  \n",
+       "4     NaN  "
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "surveys_df.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "ba63c0f0-fbcf-4505-9593-6b998fa43201",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "pandas.core.frame.DataFrame"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(surveys_df)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "884b99bb-6f0d-472b-9678-6762be6c562d",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "AttributeError",
+     "evalue": "'DataFrame' object has no attribute 'types'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp\\ipykernel_12724\\2887976836.py\u001b[0m in \u001b[0;36m?\u001b[1;34m()\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[0msurveys_df\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mtypes\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;32m~\\miniconda3\\envs\\python-ecology-lesson\\lib\\site-packages\\pandas\\core\\generic.py\u001b[0m in \u001b[0;36m?\u001b[1;34m(self, name)\u001b[0m\n\u001b[0;32m   5985\u001b[0m             \u001b[1;32mand\u001b[0m \u001b[0mname\u001b[0m \u001b[1;32mnot\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_accessors\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   5986\u001b[0m             \u001b[1;32mand\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_info_axis\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_can_hold_identifiers_and_holds_name\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mname\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   5987\u001b[0m         ):\n\u001b[0;32m   5988\u001b[0m             \u001b[1;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m[\u001b[0m\u001b[0mname\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 5989\u001b[1;33m         \u001b[1;32mreturn\u001b[0m \u001b[0mobject\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m__getattribute__\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mname\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mAttributeError\u001b[0m: 'DataFrame' object has no attribute 'types'"
+     ]
+    }
+   ],
+   "source": [
+    "surveys_df.types"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "7d27084e-5d29-438d-9166-75190421c809",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "record_id            int64\n",
+       "month                int64\n",
+       "day                  int64\n",
+       "year                 int64\n",
+       "plot_id              int64\n",
+       "species_id          object\n",
+       "sex                 object\n",
+       "hindfoot_length    float64\n",
+       "weight             float64\n",
+       "dtype: object"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "surveys_df.dtypes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "edcf2198-6a42-4047-9a15-18e944b2e996",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array(['NL', 'DM', 'PF', 'PE', 'DS', 'PP', 'SH', 'OT', 'DO', 'OX', 'SS',\n",
+       "       'OL', 'RM', nan, 'SA', 'PM', 'AH', 'DX', 'AB', 'CB', 'CM', 'CQ',\n",
+       "       'RF', 'PC', 'PG', 'PH', 'PU', 'CV', 'UR', 'UP', 'ZL', 'UL', 'CS',\n",
+       "       'SC', 'BA', 'SF', 'RO', 'AS', 'SO', 'PI', 'ST', 'CU', 'SU', 'RX',\n",
+       "       'PB', 'PL', 'PX', 'CT', 'US'], dtype=object)"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "pd.unique(surveys_df['species_id'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "a88eff0c-62c0-4ee7-8326-7c0c12799253",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>species_id</th>\n",
+       "      <th>weight</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>NL</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>NL</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>DM</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>DM</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>DM</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>...</th>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35544</th>\n",
+       "      <td>AH</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35545</th>\n",
+       "      <td>AH</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35546</th>\n",
+       "      <td>RM</td>\n",
+       "      <td>14.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35547</th>\n",
+       "      <td>DO</td>\n",
+       "      <td>51.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35548</th>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "<p>35549 rows × 2 columns</p>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "      species_id  weight\n",
+       "0             NL     NaN\n",
+       "1             NL     NaN\n",
+       "2             DM     NaN\n",
+       "3             DM     NaN\n",
+       "4             DM     NaN\n",
+       "...          ...     ...\n",
+       "35544         AH     NaN\n",
+       "35545         AH     NaN\n",
+       "35546         RM    14.0\n",
+       "35547         DO    51.0\n",
+       "35548        NaN     NaN\n",
+       "\n",
+       "[35549 rows x 2 columns]"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "surveys_df[['species_id','weight']]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "e208808f-26f0-4c41-b709-6637c27ff5a1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "count    32283.000000\n",
+       "mean        42.672428\n",
+       "std         36.631259\n",
+       "min          4.000000\n",
+       "25%         20.000000\n",
+       "50%         37.000000\n",
+       "75%         48.000000\n",
+       "max        280.000000\n",
+       "Name: weight, dtype: float64"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "surveys_df['weight'].describe()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "3dfd9112-7ac3-4b04-b460-23831656fbf0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "42.672428212991356"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "surveys_df['weight'].mean()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "5ceb7b58-6560-4104-a5d3-f0af5b91a517",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead tr th {\n",
+       "        text-align: left;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead tr:last-of-type th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr>\n",
+       "      <th></th>\n",
+       "      <th colspan=\"8\" halign=\"left\">record_id</th>\n",
+       "      <th colspan=\"2\" halign=\"left\">month</th>\n",
+       "      <th>...</th>\n",
+       "      <th colspan=\"2\" halign=\"left\">hindfoot_length</th>\n",
+       "      <th colspan=\"8\" halign=\"left\">weight</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th></th>\n",
+       "      <th>count</th>\n",
+       "      <th>mean</th>\n",
+       "      <th>std</th>\n",
+       "      <th>min</th>\n",
+       "      <th>25%</th>\n",
+       "      <th>50%</th>\n",
+       "      <th>75%</th>\n",
+       "      <th>max</th>\n",
+       "      <th>count</th>\n",
+       "      <th>mean</th>\n",
+       "      <th>...</th>\n",
+       "      <th>75%</th>\n",
+       "      <th>max</th>\n",
+       "      <th>count</th>\n",
+       "      <th>mean</th>\n",
+       "      <th>std</th>\n",
+       "      <th>min</th>\n",
+       "      <th>25%</th>\n",
+       "      <th>50%</th>\n",
+       "      <th>75%</th>\n",
+       "      <th>max</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>sex</th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>F</th>\n",
+       "      <td>15690.0</td>\n",
+       "      <td>18036.412046</td>\n",
+       "      <td>10423.089000</td>\n",
+       "      <td>3.0</td>\n",
+       "      <td>8917.50</td>\n",
+       "      <td>18075.5</td>\n",
+       "      <td>27250.00</td>\n",
+       "      <td>35547.0</td>\n",
+       "      <td>15690.0</td>\n",
+       "      <td>6.587253</td>\n",
+       "      <td>...</td>\n",
+       "      <td>36.0</td>\n",
+       "      <td>64.0</td>\n",
+       "      <td>15303.0</td>\n",
+       "      <td>42.170555</td>\n",
+       "      <td>36.847958</td>\n",
+       "      <td>4.0</td>\n",
+       "      <td>20.0</td>\n",
+       "      <td>34.0</td>\n",
+       "      <td>46.0</td>\n",
+       "      <td>274.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>M</th>\n",
+       "      <td>17348.0</td>\n",
+       "      <td>17754.835601</td>\n",
+       "      <td>10132.203323</td>\n",
+       "      <td>1.0</td>\n",
+       "      <td>8969.75</td>\n",
+       "      <td>17727.5</td>\n",
+       "      <td>26454.25</td>\n",
+       "      <td>35548.0</td>\n",
+       "      <td>17348.0</td>\n",
+       "      <td>6.396184</td>\n",
+       "      <td>...</td>\n",
+       "      <td>36.0</td>\n",
+       "      <td>58.0</td>\n",
+       "      <td>16879.0</td>\n",
+       "      <td>42.995379</td>\n",
+       "      <td>36.184981</td>\n",
+       "      <td>4.0</td>\n",
+       "      <td>20.0</td>\n",
+       "      <td>39.0</td>\n",
+       "      <td>49.0</td>\n",
+       "      <td>280.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "<p>2 rows × 56 columns</p>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "    record_id                                                               \\\n",
+       "        count          mean           std  min      25%      50%       75%   \n",
+       "sex                                                                          \n",
+       "F     15690.0  18036.412046  10423.089000  3.0  8917.50  18075.5  27250.00   \n",
+       "M     17348.0  17754.835601  10132.203323  1.0  8969.75  17727.5  26454.25   \n",
+       "\n",
+       "                month            ... hindfoot_length         weight  \\\n",
+       "         max    count      mean  ...             75%   max    count   \n",
+       "sex                              ...                                  \n",
+       "F    35547.0  15690.0  6.587253  ...            36.0  64.0  15303.0   \n",
+       "M    35548.0  17348.0  6.396184  ...            36.0  58.0  16879.0   \n",
+       "\n",
+       "                                                         \n",
+       "          mean        std  min   25%   50%   75%    max  \n",
+       "sex                                                      \n",
+       "F    42.170555  36.847958  4.0  20.0  34.0  46.0  274.0  \n",
+       "M    42.995379  36.184981  4.0  20.0  39.0  49.0  280.0  \n",
+       "\n",
+       "[2 rows x 56 columns]"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "grouped_data = surveys_df.groupby('sex')\n",
+    "\n",
+    "grouped_data.describe()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "b36cb959-69dc-4ded-b964-bf4c1f948f41",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>record_id</th>\n",
+       "      <th>month</th>\n",
+       "      <th>day</th>\n",
+       "      <th>year</th>\n",
+       "      <th>plot_id</th>\n",
+       "      <th>hindfoot_length</th>\n",
+       "      <th>weight</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>sex</th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>F</th>\n",
+       "      <td>18036.412046</td>\n",
+       "      <td>6.587253</td>\n",
+       "      <td>15.880943</td>\n",
+       "      <td>1990.644997</td>\n",
+       "      <td>11.440854</td>\n",
+       "      <td>28.836780</td>\n",
+       "      <td>42.170555</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>M</th>\n",
+       "      <td>17754.835601</td>\n",
+       "      <td>6.396184</td>\n",
+       "      <td>16.078799</td>\n",
+       "      <td>1990.480401</td>\n",
+       "      <td>11.098282</td>\n",
+       "      <td>29.709578</td>\n",
+       "      <td>42.995379</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "        record_id     month        day         year    plot_id  \\\n",
+       "sex                                                              \n",
+       "F    18036.412046  6.587253  15.880943  1990.644997  11.440854   \n",
+       "M    17754.835601  6.396184  16.078799  1990.480401  11.098282   \n",
+       "\n",
+       "     hindfoot_length     weight  \n",
+       "sex                              \n",
+       "F          28.836780  42.170555  \n",
+       "M          29.709578  42.995379  "
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "grouped_data.mean(numeric_only=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "ff41e6a4-128d-4ffe-9e7c-ce90505d8e6a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "species_id\n",
+       "AB      303\n",
+       "AH      437\n",
+       "AS        2\n",
+       "BA       46\n",
+       "CB       50\n",
+       "CM       13\n",
+       "CQ       16\n",
+       "CS        1\n",
+       "CT        1\n",
+       "CU        1\n",
+       "CV        1\n",
+       "DM    10596\n",
+       "DO     3027\n",
+       "DS     2504\n",
+       "DX       40\n",
+       "NL     1252\n",
+       "OL     1006\n",
+       "OT     2249\n",
+       "OX       12\n",
+       "PB     2891\n",
+       "PC       39\n",
+       "PE     1299\n",
+       "PF     1597\n",
+       "PG        8\n",
+       "PH       32\n",
+       "PI        9\n",
+       "PL       36\n",
+       "PM      899\n",
+       "PP     3123\n",
+       "PU        5\n",
+       "PX        6\n",
+       "RF       75\n",
+       "RM     2609\n",
+       "RO        8\n",
+       "RX        2\n",
+       "SA       75\n",
+       "SC        1\n",
+       "SF       43\n",
+       "SH      147\n",
+       "SO       43\n",
+       "SS      248\n",
+       "ST        1\n",
+       "SU        5\n",
+       "UL        4\n",
+       "UP        8\n",
+       "UR       10\n",
+       "US        4\n",
+       "ZL        2\n",
+       "Name: record_id, dtype: int64"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "surveys_df.groupby('species_id')['record_id'].count()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "18cacfe9-b236-4083-810b-2c62b2d852a1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "303"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "surveys_df.groupby('species_id')['record_id'].count()['AB']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "26c1c152-3923-41bd-8bf5-63eb0697e36f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0           NaN\n",
+       "1           NaN\n",
+       "2           NaN\n",
+       "3           NaN\n",
+       "4           NaN\n",
+       "          ...  \n",
+       "35544       NaN\n",
+       "35545       NaN\n",
+       "35546     196.0\n",
+       "35547    2601.0\n",
+       "35548       NaN\n",
+       "Name: weight, Length: 35549, dtype: float64"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "surveys_df['weight']**2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dc87c557-1a76-47fe-9361-92e22afb6717",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.20"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
